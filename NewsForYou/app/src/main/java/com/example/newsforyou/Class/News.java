@@ -29,6 +29,9 @@ public class News {
         this.date = date;
     }
 
+    public News(int nextInt, String title, String test, String author, String toString) {
+    }
+
     public int getId() {
         return id;
     }
