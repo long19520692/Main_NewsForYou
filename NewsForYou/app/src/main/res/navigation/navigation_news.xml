@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation_news">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_news"
+    app:startDestination="@id/newFragment">
 
+    <fragment
+        android:id="@+id/newFragment"
+        android:name="com.example.newsforyou.Fragments.NewFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
 </navigation>
