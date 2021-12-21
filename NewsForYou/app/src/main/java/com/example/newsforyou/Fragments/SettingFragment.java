@@ -3,7 +3,6 @@ package com.example.newsforyou.Fragments;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.bumptech.glide.Glide;
 import com.example.newsforyou.Class.Like;
 import com.example.newsforyou.ProfileActivity;
 import com.example.newsforyou.R;
@@ -84,9 +82,9 @@ public class SettingFragment extends Fragment {
 
         tvHistory = (TextView) mView.findViewById(R.id.tv_history_setting);
         tvDownload = (TextView) mView.findViewById(R.id.tv_download_setting);
-        tvSave = (TextView) mView.findViewById(R.id.tv_save_setting);
+        tvSave = (TextView) mView.findViewById(R.id.tv_like_setting);
         tvReport = (TextView) mView.findViewById(R.id.tv_report_setting);
-        ivSave = (ImageView) mView.findViewById(R.id.iv_save_setting);
+        ivSave = (ImageView) mView.findViewById(R.id.iv_like_setting);
         ivView = (ImageView) mView.findViewById(R.id.iv_history_setting);
         ivDownload = (ImageView) mView.findViewById(R.id.iv_download_setting);
         ivReport = (ImageView) mView.findViewById(R.id.iv_report_setting);

@@ -16,7 +16,7 @@
         android:text="Tìm kiếm"
         android:textAlignment="center"
         android:textColor="@color/dark_blue"
-        android:textSize="20sp"
+        android:textSize="@dimen/text_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -47,7 +47,7 @@
         android:paddingEnd="43dp"
         android:singleLine="true"
         android:textAlignment="center"
-        android:textSize="14sp"
+        android:textSize="@dimen/text_small"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +72,7 @@
         android:layout_marginTop="16dp"
         android:text="Gợi ý"
         android:textColor="@color/dark_blue"
-        android:textSize="20sp"
+        android:textSize="@dimen/text_medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_search" />
 
