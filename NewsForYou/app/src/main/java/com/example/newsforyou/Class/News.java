@@ -18,8 +18,7 @@ public class News {
         date = new Date().toString();
     }
 
-    public News(int id, String title, String content, String author,String date) {
-        this.id = id;
+    public News(String title, String content, String author,String date) {
         this.title = title;
         this.content = content;
         this.author = author;
@@ -100,5 +99,20 @@ public class News {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return "News{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", author='" + author + '\'' +
+                ", commentCount=" + commentCount +
+                ", reportCount=" + reportCount +
+                ", viewCount=" + viewCount +
+                ", likeCount=" + likeCount +
+                ", date='" + date + '\'' +
+                '}';
     }
 }

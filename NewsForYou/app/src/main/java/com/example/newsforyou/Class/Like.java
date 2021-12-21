@@ -4,17 +4,17 @@ import java.util.List;
 
 public class Like {
     int id;
-    List<Integer> newsId;
-    List<Integer> userId;
+    String title;
+    String email;
 
     public Like() {
 
     }
 
-    public Like(int id, List<Integer> newsId, List<Integer> userId) {
+    public Like(int id, String title, String email) {
         this.id = id;
-        this.newsId = newsId;
-        this.userId = userId;
+        this.title = title;
+        this.email = email;
     }
 
     public int getId() {
@@ -25,35 +25,19 @@ public class Like {
         this.id = id;
     }
 
-    public List<Integer> getNewsId() {
-        return newsId;
+    public String getTitle() {
+        return title;
     }
 
-    public void setNewsId(List<Integer> newsId) {
-        this.newsId = newsId;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public List<Integer> getUserId() {
-        return userId;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUserId(List<Integer> userId) {
-        this.userId = userId;
-    }
-
-    public void addNews(int newsId) {
-        this.newsId.add(newsId);
-    }
-
-    public void removeNews(int newsId) {
-        this.newsId.remove(newsId);
-    }
-
-    public void addUser(int userId) {
-        this.userId.add(userId);
-    }
-
-    public void removeUser(int userId) {
-        this.userId.remove(userId);
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

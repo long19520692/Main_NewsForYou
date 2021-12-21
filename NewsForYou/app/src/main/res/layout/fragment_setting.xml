@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTintMode="add"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:backgroundTintMode="add">
 
     <TextView
-        android:id="@+id/tv_setting"
+        android:id="@+id/tv_option"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Cài đặt"
+        android:text="Tùy chọn"
         android:textAlignment="center"
         android:textColor="@color/dark_blue"
-        android:textSize="20sp"
+        android:textSize="@dimen/text_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,50 +28,231 @@
         android:background="#dbd3d3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_setting" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_option" />
 
-    <ImageButton
-        android:id="@+id/btn_back"
-        android:layout_width="41dp"
-        android:layout_height="40dp"
-        android:backgroundTint="@android:color/transparent"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_setting"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/back" />
 
     <ImageView
         android:id="@+id/iv_background"
-        android:layout_width="415dp"
-        android:layout_height="695dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:srcCompat="@drawable/setting_background" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/setting_background_2" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_avatar_setting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/default_avatar"
+        app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:srcCompat="@drawable/default_avatar" />
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/iv_history_setting"
         android:layout_width="34dp"
         android:layout_height="31dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/eye_open"
         android:backgroundTint="#00000000"
         android:visibility="visible"
-        app:srcCompat="@drawable/eye_open"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="192dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/eye_open" />
+
+    <ImageView
+        android:id="@+id/iv_download_setting"
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:srcCompat="@drawable/download" />
+
+    <TextView
+        android:id="@+id/tv_history_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Đọc gần đây"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_history_setting"
+        app:layout_constraintStart_toEndOf="@+id/iv_history_setting"
+        app:layout_constraintTop_toTopOf="@+id/iv_history_setting" />
+
+    <TextView
+        android:id="@+id/tv_download_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Đọc offline"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_download_setting"
+        app:layout_constraintStart_toEndOf="@+id/iv_download_setting"
+        app:layout_constraintTop_toTopOf="@+id/iv_download_setting" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <ImageView
+        android:id="@+id/iv_like_setting"
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="30dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:srcCompat="@drawable/heart_outline" />
+
+    <TextView
+        android:id="@+id/tv_like_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Đã thích"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_like_setting"
+        app:layout_constraintStart_toEndOf="@+id/iv_like_setting"
+        app:layout_constraintTop_toTopOf="@+id/iv_like_setting" />
+
+    <ImageView
+        android:id="@+id/iv_report_setting"
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:srcCompat="@drawable/report" />
+
+    <TextView
+        android:id="@+id/tv_report_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Báo cáo"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_report_setting"
+        app:layout_constraintStart_toEndOf="@+id/iv_report_setting"
+        app:layout_constraintTop_toTopOf="@+id/iv_report_setting" />
+
+    <TextView
+        android:id="@+id/tv_setting_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Cài đặt"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_like_setting" />
+
+    <TextView
+        android:id="@+id/tv_name_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="UIT"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_avatar_setting"
+        app:layout_constraintStart_toEndOf="@+id/iv_avatar_setting"
+        app:layout_constraintTop_toTopOf="@+id/iv_avatar_setting" />
+
+    <ImageView
+        android:id="@+id/iv_notification_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_setting_setting"
+        app:srcCompat="@drawable/bell" />
+
+    <TextView
+        android:id="@+id/tv_notification_setting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Thông báo"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_notification_setting"
+        app:layout_constraintStart_toEndOf="@+id/iv_notification_setting"
+        app:layout_constraintTop_toTopOf="@+id/iv_notification_setting" />
+
+    <ImageView
+        android:id="@+id/iv_text_size_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_notification_setting"
+        app:srcCompat="@drawable/text_size" />
+
+    <TextView
+        android:id="@+id/tv_text_size_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Cỡ chữ"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_text_size_setting"
+        app:layout_constraintStart_toEndOf="@+id/iv_text_size_setting"
+        app:layout_constraintTop_toTopOf="@+id/iv_text_size_setting" />
+
+    <TextView
+        android:id="@+id/tv_logout_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="Đăng xuất"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

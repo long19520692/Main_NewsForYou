@@ -16,12 +16,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.newsforyou.Class.CheckValid;
+import com.example.newsforyou.Class.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -29,6 +32,8 @@ public class SignUpActivity extends AppCompatActivity {
     private TextView tvToSignIn;
     private Button btnSignUp;
     private ProgressDialog progressDialog;
+
+    DatabaseReference userDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,6 +118,8 @@ public class SignUpActivity extends AppCompatActivity {
                                                                                 "Vui lòng xác nhận email " + user.getEmail() +
                                                                                 " để bảo vệ tài khoản của bạn.",
                                                                                 Toast.LENGTH_LONG).show();
+
+                                                                                initUser();
                                                                 }
                                                             });
 
@@ -141,5 +148,10 @@ public class SignUpActivity extends AppCompatActivity {
         return cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnected();
     }
 
+    private void initUser() {
+        userDatabase = FirebaseDatabase.getInstance().getReference();
 
+        User user = new User(edtName.getText().toString(), edtEmail.getText().toString(), edtPassword.getText().toString());
+        userDatabase.child("User").push().setValue(user);
+    }
 }

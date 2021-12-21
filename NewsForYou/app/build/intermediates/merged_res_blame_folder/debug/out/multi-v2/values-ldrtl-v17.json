@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Desktop\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+            "outputFile": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldrtl-v17\\values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "D:\\Program\\Gradle\\gradle-7.3\\caches\\transforms-3\\c2e76fb5e086b5c906002f45c03cd24a\\transformed\\material-1.4.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\longb\\.gradle\\caches\\transforms-3\\c2e76fb5e086b5c906002f45c03cd24a\\transformed\\material-1.4.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

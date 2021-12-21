@@ -16,19 +16,26 @@ import com.example.newsforyou.Class.MainViewPagerAdapter;
 import com.example.newsforyou.Class.News;
 import com.example.newsforyou.Class.User;
 import com.example.newsforyou.Class.ZoomOutPageTransformer;
+import com.github.javafaker.Faker;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.Locale;
+import java.util.Random;
 
 public class DashboardActivity extends AppCompatActivity {
     private long Timeback;
     private DatabaseReference newsDatabase;
+    private StorageReference storageRef;
+    private FirebaseStorage storage;
 
     private ViewPager2 mViewPager;
     private BottomNavigationView mBottomNavigationView;
@@ -41,7 +48,7 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
         initUI();
         initListener();
-        initNews();
+        //initNews();
         showUserInformation();
     }
 
@@ -131,9 +138,12 @@ public class DashboardActivity extends AppCompatActivity {
 
     private void initNews() {
         newsDatabase = FirebaseDatabase.getInstance().getReference();
-        Date time = new Date(2021, 10, 8, 15, 0, 0);
+        Faker faker = new Faker(new Locale("vi"));
+        for(int i = 0; i < 100; i++){
+            Date time = new Date();
+            News news = new News(new Random().nextInt(),faker.book().title(), "Test", faker.book().author(), time.toString());
+            newsDatabase.child("News").push().setValue(news);
+        }
 
-        News news = new News(1, "Title test 1", "This is a test content.", "Long", time.toString());
-        newsDatabase.child("News").push().setValue(news);
     }
 }

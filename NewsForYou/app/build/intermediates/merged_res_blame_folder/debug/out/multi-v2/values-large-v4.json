@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Desktop\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "outputFile": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "D:\\Program\\Gradle\\gradle-7.3\\caches\\transforms-3\\ccd6c517801f56e7200472775579e27c\\transformed\\appcompat-1.3.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\longb\\.gradle\\caches\\transforms-3\\ccd6c517801f56e7200472775579e27c\\transformed\\appcompat-1.3.1\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Program\\Gradle\\gradle-7.3\\caches\\transforms-3\\c2e76fb5e086b5c906002f45c03cd24a\\transformed\\material-1.4.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\longb\\.gradle\\caches\\transforms-3\\c2e76fb5e086b5c906002f45c03cd24a\\transformed\\material-1.4.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
