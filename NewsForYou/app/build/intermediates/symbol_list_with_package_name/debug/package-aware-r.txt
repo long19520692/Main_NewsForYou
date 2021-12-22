@@ -2313,6 +2313,7 @@ id navigation_news
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id newFragment
 id noScroll
 id noState
 id none
