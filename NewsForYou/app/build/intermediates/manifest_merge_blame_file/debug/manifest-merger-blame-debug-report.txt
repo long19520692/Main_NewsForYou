@@ -6,102 +6,102 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml
+8-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="31" />
-9-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml
+9-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:5:5-67
-11-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:5:22-64
+11-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:6:5-79
-12-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:6:22-76
+12-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:6:22-76
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:7:5-76
-13-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:7:22-73
+13-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:7:5-76
+13-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:7:22-73
 14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-14-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:8:5-81
-14-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:8:22-78
+14-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:8:5-81
+14-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:8:22-78
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:9:5-80
-15-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:9:22-77
+15-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:9:5-80
+15-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:9:22-77
 16
 17    <application
-17-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:11:5-48:19
+17-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:11:5-48:19
 18        android:allowBackup="true"
-18-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:12:9-35
+18-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:12:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.5.0] C:\Users\longb\.gradle\caches\transforms-3\1c82df0e58fbd0ba966b0ae0d34659c1\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 20        android:debuggable="true"
 21        android:extractNativeLibs="false"
 22        android:hardwareAccelerated="false"
-22-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:13:9-44
+22-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:13:9-44
 23        android:icon="@mipmap/ic_launcher"
-23-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:14:9-43
+23-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:14:9-43
 24        android:label="@string/app_name"
-24-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:15:9-41
+24-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:15:9-41
 25        android:largeHeap="true"
-25-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:16:9-33
+25-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:16:9-33
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:17:9-54
+26-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:17:9-54
 27        android:supportsRtl="true"
-27-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:18:9-35
+27-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:18:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.NewsForYou" >
-29-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:19:9-48
+29-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:19:9-48
 30        <activity
-30-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:20:9-22:39
+30-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:20:9-22:39
 31            android:name="com.example.newsforyou.NewsDetailsActivity"
-31-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:21:13-48
+31-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:21:13-48
 32            android:exported="true" />
-32-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:22:13-36
+32-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:22:13-36
 33        <activity
-33-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:23:9-25:39
+33-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:23:9-25:39
 34            android:name="com.example.newsforyou.ForgotPasswordActivity"
-34-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:24:13-51
+34-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:24:13-51
 35            android:exported="true" />
-35-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:25:13-36
+35-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:25:13-36
 36        <activity
-36-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:26:9-28:39
+36-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:26:9-28:39
 37            android:name="com.example.newsforyou.DashboardActivity"
-37-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:27:13-46
+37-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:27:13-46
 38            android:exported="true" />
-38-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:28:13-36
+38-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:28:13-36
 39        <activity
-39-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:29:9-31:39
+39-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:29:9-31:39
 40            android:name="com.example.newsforyou.SignUpActivity"
-40-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:30:13-43
+40-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:30:13-43
 41            android:exported="true" />
-41-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:31:13-36
+41-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:31:13-36
 42        <activity
-42-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:32:9-34:39
+42-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:32:9-34:39
 43            android:name="com.example.newsforyou.SignInActivity"
-43-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:33:13-43
+43-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:33:13-43
 44            android:exported="true" />
-44-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:34:13-36
+44-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:34:13-36
 45        <activity
-45-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:35:9-37:39
+45-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:35:9-37:39
 46            android:name="com.example.newsforyou.ProfileActivity"
-46-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:36:13-44
+46-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:36:13-44
 47            android:exported="true" />
-47-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:37:13-36
+47-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:37:13-36
 48        <activity
-48-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:38:9-47:20
+48-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:38:9-47:20
 49            android:name="com.example.newsforyou.SplashActivity"
-49-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:39:13-43
+49-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:39:13-43
 50            android:exported="true"
-50-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:40:13-36
+50-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:40:13-36
 51            android:noHistory="true" >
-51-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:41:13-37
+51-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:41:13-37
 52            <intent-filter>
-52-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:42:13-46:29
+52-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:42:13-46:29
 53                <action android:name="android.intent.action.MAIN" />
-53-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:43:17-69
-53-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:43:25-66
+53-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:43:17-69
+53-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:43:25-66
 54
 55                <category android:name="android.intent.category.LAUNCHER" />
-55-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:45:17-77
-55-->D:\Github\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:45:27-74
+55-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:45:17-77
+55-->D:\GitHub\Main_NewsForYou\NewsForYou\app\src\main\AndroidManifest.xml:45:27-74
 56            </intent-filter>
 57        </activity>
 58
@@ -225,13 +225,13 @@
 120        </service>
 121
 122        <provider
-122-->[com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\5448024876b423c625ebd9213fe344a7\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+122-->[com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\67122262c037f8bbfc6fa862b59924e6\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 123            android:name="com.squareup.picasso.PicassoProvider"
-123-->[com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\5448024876b423c625ebd9213fe344a7\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+123-->[com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\67122262c037f8bbfc6fa862b59924e6\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 124            android:authorities="com.example.newsforyou.com.squareup.picasso"
-124-->[com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\5448024876b423c625ebd9213fe344a7\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+124-->[com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\67122262c037f8bbfc6fa862b59924e6\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 125            android:exported="false" />
-125-->[com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\5448024876b423c625ebd9213fe344a7\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+125-->[com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\67122262c037f8bbfc6fa862b59924e6\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 126        <provider
 126-->[com.google.firebase:firebase-common:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
 127            android:name="com.google.firebase.provider.FirebaseInitProvider"

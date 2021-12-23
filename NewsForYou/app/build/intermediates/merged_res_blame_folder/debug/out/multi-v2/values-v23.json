@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Github\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\longb\\.gradle\\caches\\transforms-3\\b5a1dde354f7afc013622ec6eac7dc84\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",

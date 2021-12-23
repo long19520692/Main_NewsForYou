@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Github\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\longb\\.gradle\\caches\\transforms-3\\43212925780674393d894e81ec2cdee2\\transformed\\navigation-fragment-2.3.5\\res\\values\\values.xml",
@@ -80,23 +80,6 @@
                     }
                 },
                 {
-                    "source": "D:\\Github\\Main_NewsForYou\\NewsForYou\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,714",
-                        "endColumns": "143,81,103,108,119,99,76",
-                        "endOffsets": "194,276,380,489,609,709,786"
-                    },
-                    "to": {
-                        "startLines": "1256,1262,1263,1264,1265,1266,1333",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "74617,75269,75351,75455,75564,75684,86475",
-                        "endColumns": "143,81,103,108,119,99,76",
-                        "endOffsets": "74756,75346,75450,75559,75679,75779,86547"
-                    }
-                },
-                {
                     "source": "C:\\Users\\longb\\.gradle\\caches\\transforms-3\\6adff63397c1ac50e331d47bdf613af2\\transformed\\jetified-play-services-basement-17.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,7",
@@ -111,6 +94,23 @@
                         "startOffsets": "67564,73324",
                         "endColumns": "67,166",
                         "endOffsets": "67627,73486"
+                    }
+                },
+                {
+                    "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\values\\dimen.xml",
+                    "from": {
+                        "startLines": "9,2,3,4,5,8,7,6",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "395,104,142,183,224,352,308,265",
+                        "endColumns": "80,36,39,39,39,41,42,41",
+                        "endOffsets": "471,136,177,218,259,389,346,302"
+                    },
+                    "to": {
+                        "startLines": "700,778,779,780,781,1043,1044,1045",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "37708,42945,42982,43022,43062,60273,60315,60358",
+                        "endColumns": "78,36,39,39,39,41,42,41",
+                        "endOffsets": "37782,42977,43017,43057,43097,60310,60353,60395"
                     }
                 },
                 {
@@ -152,6 +152,23 @@
                     }
                 },
                 {
+                    "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1,3,4,5,6,2,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "17,109,155,201,251,68,362,433",
+                        "endColumns": "49,44,44,48,50,39,69,70",
+                        "endOffsets": "62,149,195,245,297,103,427,499"
+                    },
+                    "to": {
+                        "startLines": "1225,1227,1228,1229,1230,1257,1267,1334",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "71100,71300,71345,71390,71439,74761,75784,86552",
+                        "endColumns": "49,44,44,48,50,39,69,70",
+                        "endOffsets": "71145,71340,71385,71434,71485,74796,75849,86618"
+                    }
+                },
+                {
                     "source": "C:\\Users\\longb\\.gradle\\caches\\transforms-3\\565cca9de196af3b5c3cf847658b2a4e\\transformed\\lifecycle-runtime-2.3.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -169,20 +186,39 @@
                     }
                 },
                 {
-                    "source": "D:\\Github\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\values\\dimen.xml",
+                    "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\values\\themes.xml",
                     "from": {
-                        "startLines": "9,2,3,4,5,8,7,6",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "395,104,142,183,224,352,308,265",
-                        "endColumns": "80,36,39,39,39,41,42,41",
-                        "endOffsets": "471,136,177,218,259,389,346,302"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "102",
+                        "endLines": "15",
+                        "endColumns": "12",
+                        "endOffsets": "896"
                     },
                     "to": {
-                        "startLines": "700,778,779,780,781,1043,1044,1045",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "37708,42945,42982,43022,43062,60273,60315,60358",
-                        "endColumns": "78,36,39,39,39,41,42,41",
-                        "endOffsets": "37782,42977,43017,43057,43097,60310,60353,60395"
+                        "startLines": "4094",
+                        "startColumns": "4",
+                        "startOffsets": "271666",
+                        "endLines": "4107",
+                        "endColumns": "12",
+                        "endOffsets": "272445"
+                    }
+                },
+                {
+                    "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "7,10,9,12,2,3,4,11,5,6,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "293,424,379,503,57,105,153,464,201,247,336",
+                        "endColumns": "41,38,43,38,46,46,46,37,44,44,41",
+                        "endOffsets": "330,458,418,537,99,147,195,497,241,287,373"
+                    },
+                    "to": {
+                        "startLines": "494,495,520,564,598,599,600,601,612,613,616",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "23894,23936,25785,28798,31018,31065,31112,31159,31894,31939,32105",
+                        "endColumns": "41,38,43,38,46,46,46,37,44,44,41",
+                        "endOffsets": "23931,23970,25824,28832,31060,31107,31154,31192,31934,31979,32142"
                     }
                 },
                 {
@@ -221,6 +257,23 @@
                         "endLines": "1095,1127,1163,7536,7540",
                         "endColumns": "56,64,63,24,24",
                         "endOffsets": "63510,65146,67000,465613,465762"
+                    }
+                },
+                {
+                    "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,714",
+                        "endColumns": "143,81,103,108,119,99,76",
+                        "endOffsets": "194,276,380,489,609,709,786"
+                    },
+                    "to": {
+                        "startLines": "1256,1262,1263,1264,1265,1266,1333",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "74617,75269,75351,75455,75564,75684,86475",
+                        "endColumns": "143,81,103,108,119,99,76",
+                        "endOffsets": "74756,75346,75450,75559,75679,75779,86547"
                     }
                 },
                 {
@@ -296,25 +349,6 @@
                     }
                 },
                 {
-                    "source": "D:\\Github\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "102",
-                        "endLines": "15",
-                        "endColumns": "12",
-                        "endOffsets": "896"
-                    },
-                    "to": {
-                        "startLines": "4094",
-                        "startColumns": "4",
-                        "startOffsets": "271666",
-                        "endLines": "4107",
-                        "endColumns": "12",
-                        "endOffsets": "272445"
-                    }
-                },
-                {
                     "source": "C:\\Users\\longb\\.gradle\\caches\\transforms-3\\bc549059837f713a6813ae954483e241\\transformed\\media-1.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,5,6,7,8,10,11,12,13,14",
@@ -329,23 +363,6 @@
                         "startOffsets": "30341,59280,59333,59386,59439,251932,252108,252230,252492,252687",
                         "endColumns": "88,52,52,52,52,65,121,60,65,66",
                         "endOffsets": "30425,59328,59381,59434,59487,251993,252225,252286,252553,252749"
-                    }
-                },
-                {
-                    "source": "D:\\Github\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "7,10,9,12,2,3,4,11,5,6,8",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "293,424,379,503,57,105,153,464,201,247,336",
-                        "endColumns": "41,38,43,38,46,46,46,37,44,44,41",
-                        "endOffsets": "330,458,418,537,99,147,195,497,241,287,373"
-                    },
-                    "to": {
-                        "startLines": "494,495,520,564,598,599,600,601,612,613,616",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "23894,23936,25785,28798,31018,31065,31112,31159,31894,31939,32105",
-                        "endColumns": "41,38,43,38,46,46,46,37,44,44,41",
-                        "endOffsets": "23931,23970,25824,28832,31060,31107,31154,31192,31934,31979,32142"
                     }
                 },
                 {
@@ -528,23 +545,6 @@
                         "startOffsets": "63602",
                         "endColumns": "57",
                         "endOffsets": "63655"
-                    }
-                },
-                {
-                    "source": "D:\\Github\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1,3,4,5,6,2,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "17,109,155,201,251,68,362,433",
-                        "endColumns": "49,44,44,48,50,39,69,70",
-                        "endOffsets": "62,149,195,245,297,103,427,499"
-                    },
-                    "to": {
-                        "startLines": "1225,1227,1228,1229,1230,1257,1267,1334",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "71100,71300,71345,71390,71439,74761,75784,86552",
-                        "endColumns": "49,44,44,48,50,39,69,70",
-                        "endOffsets": "71145,71340,71385,71434,71485,74796,75849,86618"
                     }
                 }
             ]
