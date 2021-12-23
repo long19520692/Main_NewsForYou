@@ -156,16 +156,16 @@
         "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\drawable\\ic_download.xml"
     },
     {
+        "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_news_detail.xml.flat",
+        "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\layout\\activity_news_detail.xml"
+    },
+    {
         "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_search.png.flat",
         "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\drawable\\search.png"
     },
     {
         "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_menu_hamburger.png.flat",
         "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\drawable\\menu_hamburger.png"
-    },
-    {
-        "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_news_details.xml.flat",
-        "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\layout\\activity_news_details.xml"
     },
     {
         "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_report.png.flat",
@@ -254,9 +254,5 @@
     {
         "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_heart.xml.flat",
         "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\drawable\\ic_heart.xml"
-    },
-    {
-        "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_news.xml.flat",
-        "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\layout\\activity_news.xml"
     }
 ]

@@ -2201,6 +2201,7 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal_only
+id ib_back_news_detail
 id icon
 id icon_group
 id icon_only
@@ -2224,6 +2225,7 @@ id iv_download_setting
 id iv_history_setting
 id iv_like_news_item
 id iv_like_setting
+id iv_logo_news_detail
 id iv_notification_setting
 id iv_report_setting
 id iv_setting_home
@@ -2479,7 +2481,6 @@ id tv_like_news_item
 id tv_like_setting
 id tv_logout_setting
 id tv_name_setting
-id tv_news_detail
 id tv_notification_setting
 id tv_ooops
 id tv_option
@@ -2593,8 +2594,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_dashboard
 layout activity_forgot_password
-layout activity_news
-layout activity_news_details
+layout activity_news_detail
 layout activity_profile
 layout activity_sign_in
 layout activity_sign_up

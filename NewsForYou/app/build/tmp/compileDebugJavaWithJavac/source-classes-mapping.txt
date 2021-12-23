@@ -21,12 +21,11 @@ com/example/newsforyou/SignUpActivity.java
  com.example.newsforyou.SignUpActivity$2
  com.example.newsforyou.SignUpActivity$2$1
  com.example.newsforyou.SignUpActivity$2$1$1
-com/example/newsforyou/NewsActivity.java
- com.example.newsforyou.NewsActivity
 com/example/newsforyou/Class/Comment.java
  com.example.newsforyou.Class.Comment
 com/example/newsforyou/NewsDetailsActivity.java
  com.example.newsforyou.NewsDetailsActivity
+ com.example.newsforyou.NewsDetailsActivity$1
 com/example/newsforyou/Class/ZoomOutPageTransformer.java
  com.example.newsforyou.Class.ZoomOutPageTransformer
 com/example/newsforyou/Utils/EmptyRecyclerView.java

@@ -2200,6 +2200,7 @@ int id home 0x7f0800f4
 int id homeAsUp 0x7f0800f5
 int id honorRequest 0x7f0800f6
 int id horizontal_only 0x7f0800f7
+int id ib_back_news_detail 0x7f080239
 int id icon 0x7f0800f8
 int id icon_group 0x7f0800f9
 int id icon_only 0x7f0800fa
@@ -2223,6 +2224,7 @@ int id iv_download_setting 0x7f08010b
 int id iv_history_setting 0x7f08010c
 int id iv_like_news_item 0x7f08010d
 int id iv_like_setting 0x7f08010e
+int id iv_logo_news_detail 0x7f08023a
 int id iv_notification_setting 0x7f08010f
 int id iv_report_setting 0x7f080110
 int id iv_setting_home 0x7f080111
@@ -2478,7 +2480,6 @@ int id tv_like_news_item 0x7f08020a
 int id tv_like_setting 0x7f08020b
 int id tv_logout_setting 0x7f08020c
 int id tv_name_setting 0x7f08020d
-int id tv_news_detail 0x7f08020e
 int id tv_notification_setting 0x7f08020f
 int id tv_ooops 0x7f080210
 int id tv_option 0x7f080211
@@ -2592,8 +2593,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_dashboard 0x7f0b001c
 int layout activity_forgot_password 0x7f0b001d
-int layout activity_news 0x7f0b001e
-int layout activity_news_details 0x7f0b001f
+int layout activity_news_detail 0x7f0b008a
 int layout activity_profile 0x7f0b0020
 int layout activity_sign_in 0x7f0b0021
 int layout activity_sign_up 0x7f0b0022

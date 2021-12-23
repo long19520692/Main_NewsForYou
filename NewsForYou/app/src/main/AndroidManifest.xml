@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsForYou">
         <activity
-            android:name=".NewsDetailsActivity"
+            android:name=".NewsDetailActivity"
             android:exported="true" />
         <activity
             android:name=".ForgotPasswordActivity"

@@ -17,7 +17,7 @@ import androidx.annotation.Nullable;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.signature.ObjectKey;
 import com.example.newsforyou.Class.News;
-import com.example.newsforyou.NewsDetailsActivity;
+import com.example.newsforyou.NewsDetailActivity;
 import com.example.newsforyou.R;
 
 import java.util.List;
@@ -58,7 +58,7 @@ public class NewsAdapter extends ArrayAdapter<News> {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(mContext, NewsDetailsActivity.class);
+                        Intent intent = new Intent(mContext, NewsDetailActivity.class);
                         intent.putExtra("title",currentNews.getTitle());
                         intent.putExtra("author",currentNews.getAuthor());
                         intent.putExtra("content",currentNews.getContent());
