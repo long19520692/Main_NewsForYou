@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import com.example.newsforyou.Class.Like;
 import com.example.newsforyou.ProfileActivity;
 import com.example.newsforyou.R;
+import com.example.newsforyou.SignInActivity;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -152,7 +153,9 @@ public class SettingFragment extends Fragment {
         tvLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(getActivity(), SignInActivity.class);
+                startActivity(intent);
             }
         });
     }

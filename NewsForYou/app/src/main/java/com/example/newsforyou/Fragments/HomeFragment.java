@@ -1,6 +1,8 @@
 package com.example.newsforyou.Fragments;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -21,12 +24,15 @@ import androidx.loader.content.Loader;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.newsforyou.Adapter.NewsAdapter;
 import com.example.newsforyou.Class.News;
 import com.example.newsforyou.DashboardActivity;
 import com.example.newsforyou.ProfileActivity;
 import com.example.newsforyou.R;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -34,8 +40,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.hanks.htextview.HTextView;
+import com.hanks.htextview.HTextViewType;
 import com.squareup.picasso.Picasso;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -44,6 +53,7 @@ public class HomeFragment extends Fragment {
 
     private View mView;
     private ImageView ivProfile;
+    private TextView tvWelcome;
     private ArrayList<News> newsList;
     private ListView lv_news;
     private NewsAdapter mAdapter;
@@ -59,9 +69,12 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_home, container, false);
+        tvWelcome = mView.findViewById(R.id.tv_welcome);
         lv_news = mView.findViewById(R.id.lv_news);
         newsList = new ArrayList<>();
         mAdapter = new NewsAdapter(mView.getContext(),newsList);
+        ivProfile = (ImageView) mView.findViewById(R.id.iv_avatar);
+        showProfile();
         databaseReference.addValueEventListener(
                 new ValueEventListener() {
                     @Override
@@ -91,7 +104,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        ivProfile = (ImageView) mView.findViewById(R.id.iv_avatar);
         ivProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -113,4 +125,16 @@ public class HomeFragment extends Fragment {
 
         return mView;
     }
+
+    private void showProfile() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user == null) {
+            return;
+        }
+
+        String name = user.getDisplayName();
+        String welcomeText = "Xin chào " + name;
+        tvWelcome.setText(welcomeText);
+    }
+
 }

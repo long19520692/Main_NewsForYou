@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -21,12 +22,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.newsforyou.Class.CheckValid;
 import com.example.newsforyou.Class.User;
 import com.example.newsforyou.Fragments.HomeFragment;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -62,6 +67,8 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_profile);
 
         storageReference = FirebaseStorage.getInstance().getReference();
@@ -114,18 +121,27 @@ public class ProfileActivity extends AppCompatActivity {
             public void onClick(View v) {
                 storageReference = FirebaseStorage.getInstance().getReference();
 
-                Toast.makeText(ProfileActivity.this, "Đã lưu", Toast.LENGTH_SHORT).show();
+                updateProfile();
             }
         });
 
         btnChangePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //
-                //
-                //
-                //
-                //
+                FirebaseAuth auth = FirebaseAuth.getInstance();
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                String emailAddress = user.getEmail();
+
+                auth.sendPasswordResetEmail(emailAddress)
+                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if (task.isSuccessful()) {
+                                        Toast.makeText(ProfileActivity.this, "Đã gửi mail đặt lại mật khẩu.", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            });
+
             }
         });
 
@@ -145,7 +161,7 @@ public class ProfileActivity extends AppCompatActivity {
                 try {
                     Uri imageUri = data.getData();
                     final InputStream imageStream = getContentResolver().openInputStream(imageUri);
-                    final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
+                    //final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
                     // ivAvatar.setImageBitmap(selectedImage);
 
                     uploadImageToFirebase(imageUri);
@@ -194,10 +210,43 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     private void updateProfile() {
+        String newName = edtUsername.getText().toString().trim();
+        String newEmail = edtEmail.getText().toString().trim();
 
-    }
+        if(!CheckValid.isValidName(newName)){
+            Toast.makeText(ProfileActivity.this, "Tên người dùng không được để trống",
+                    Toast.LENGTH_SHORT).show();
+        } else if(!CheckValid.isValidEmailAddress(newEmail)) {
+            Toast.makeText(ProfileActivity.this, "Địa chỉ email không hợp lệ.",
+                    Toast.LENGTH_SHORT).show();
+        } else {
+            UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+                    .setDisplayName(newName)
+                    .build();
 
-    private boolean isNameChange() {
-        return true;
+            user.updateProfile(profileUpdates)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task1) {
+                            if (task1.isSuccessful()) {
+                                user.updateEmail(newEmail)
+                                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                            @Override
+                                            public void onComplete(@NonNull Task<Void> task2) {
+                                                if (task2.isSuccessful()) {
+                                                    Toast.makeText(ProfileActivity.this, "Cập nhật thành công", Toast.LENGTH_SHORT).show();
+                                                } else {
+                                                    Toast.makeText(ProfileActivity.this, "Cập nhật thất bại", Toast.LENGTH_SHORT).show();
+                                                }
+                                            }
+                                        });
+                            } else{
+                                Toast.makeText(ProfileActivity.this, "Cập nhật thất bại", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+
+
+        }
     }
 }
