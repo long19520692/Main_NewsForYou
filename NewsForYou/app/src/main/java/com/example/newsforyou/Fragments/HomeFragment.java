@@ -62,6 +62,8 @@ public class HomeFragment extends Fragment {
     StorageReference storageReference;
     StorageReference avatarRef;
 
+    private FirebaseUser user;
+
     private static final String TAG = HomeFragment.class.getName();
     private final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("News");
 
@@ -96,7 +98,9 @@ public class HomeFragment extends Fragment {
 
         storageReference = FirebaseStorage.getInstance().getReference();
 
-        avatarRef = storageReference.child("avatar.jpg");
+        initUserInformation();
+
+        avatarRef = storageReference.child(user.getEmail() + ".jpg");
         avatarRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
@@ -133,8 +137,12 @@ public class HomeFragment extends Fragment {
         }
 
         String name = user.getDisplayName();
-        String welcomeText = "Xin chào " + name;
+        String welcomeText = "Xin chào, " + name;
         tvWelcome.setText(welcomeText);
+    }
+
+    private void initUserInformation() {
+        user = FirebaseAuth.getInstance().getCurrentUser();
     }
 
 }

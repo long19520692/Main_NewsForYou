@@ -211,42 +211,26 @@ public class ProfileActivity extends AppCompatActivity {
 
     private void updateProfile() {
         String newName = edtUsername.getText().toString().trim();
-        String newEmail = edtEmail.getText().toString().trim();
 
         if(!CheckValid.isValidName(newName)){
             Toast.makeText(ProfileActivity.this, "Tên người dùng không được để trống",
                     Toast.LENGTH_SHORT).show();
-        } else if(!CheckValid.isValidEmailAddress(newEmail)) {
-            Toast.makeText(ProfileActivity.this, "Địa chỉ email không hợp lệ.",
-                    Toast.LENGTH_SHORT).show();
         } else {
-            UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
-                    .setDisplayName(newName)
-                    .build();
+        UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+                .setDisplayName(newName)
+                .build();
 
-            user.updateProfile(profileUpdates)
-                    .addOnCompleteListener(new OnCompleteListener<Void>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task1) {
-                            if (task1.isSuccessful()) {
-                                user.updateEmail(newEmail)
-                                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                            @Override
-                                            public void onComplete(@NonNull Task<Void> task2) {
-                                                if (task2.isSuccessful()) {
-                                                    Toast.makeText(ProfileActivity.this, "Cập nhật thành công", Toast.LENGTH_SHORT).show();
-                                                } else {
-                                                    Toast.makeText(ProfileActivity.this, "Cập nhật thất bại", Toast.LENGTH_SHORT).show();
-                                                }
-                                            }
-                                        });
-                            } else{
-                                Toast.makeText(ProfileActivity.this, "Cập nhật thất bại", Toast.LENGTH_SHORT).show();
-                            }
+        user.updateProfile(profileUpdates)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task1) {
+                        if (task1.isSuccessful()) {
+                            Toast.makeText(ProfileActivity.this, "Cập nhật thành công", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(ProfileActivity.this, "Cập nhật thất bại", Toast.LENGTH_SHORT).show();
                         }
-                    });
-
-
+                    }
+                });
         }
     }
 }

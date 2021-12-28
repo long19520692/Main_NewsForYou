@@ -2701,7 +2701,6 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_home
-layout fragment_news
 layout fragment_save
 layout fragment_search
 layout fragment_setting
