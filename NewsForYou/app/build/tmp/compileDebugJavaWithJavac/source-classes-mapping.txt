@@ -10,16 +10,20 @@ com/example/newsforyou/Class/Like.java
  com.example.newsforyou.Class.Like
 com/example/newsforyou/Class/Report.java
  com.example.newsforyou.Class.Report
-com/example/newsforyou/Class/User.java
- com.example.newsforyou.Class.User
+com/example/newsforyou/Class/MainViewPagerAdapter.java
+ com.example.newsforyou.Class.MainViewPagerAdapter
 com/example/newsforyou/SignInActivity.java
  com.example.newsforyou.SignInActivity
  com.example.newsforyou.SignInActivity$1
  com.example.newsforyou.SignInActivity$2
  com.example.newsforyou.SignInActivity$3
  com.example.newsforyou.SignInActivity$4
-com/example/newsforyou/Class/History.java
- com.example.newsforyou.Class.History
+com/example/newsforyou/SignUpActivity.java
+ com.example.newsforyou.SignUpActivity
+ com.example.newsforyou.SignUpActivity$1
+ com.example.newsforyou.SignUpActivity$2
+ com.example.newsforyou.SignUpActivity$2$1
+ com.example.newsforyou.SignUpActivity$2$1$1
 com/example/newsforyou/Class/Comment.java
  com.example.newsforyou.Class.Comment
 com/example/newsforyou/Class/ZoomOutPageTransformer.java
@@ -27,15 +31,31 @@ com/example/newsforyou/Class/ZoomOutPageTransformer.java
 com/example/newsforyou/Utils/EmptyRecyclerView.java
  com.example.newsforyou.Utils.EmptyRecyclerView
  com.example.newsforyou.Utils.EmptyRecyclerView$1
-com/example/newsforyou/Class/CheckValid.java
- com.example.newsforyou.Class.CheckValid
-com/example/newsforyou/Adapter/NewsAdapter.java
- com.example.newsforyou.Adapter.NewsAdapter
- com.example.newsforyou.Adapter.NewsAdapter$1
-com/example/newsforyou/SplashActivity.java
- com.example.newsforyou.SplashActivity
- com.example.newsforyou.SplashActivity$1
- com.example.newsforyou.SplashActivity$2
+com/example/newsforyou/Fragments/SettingFragment.java
+ com.example.newsforyou.Fragments.SettingFragment
+ com.example.newsforyou.Fragments.SettingFragment$1
+ com.example.newsforyou.Fragments.SettingFragment$2
+ com.example.newsforyou.Fragments.SettingFragment$3
+ com.example.newsforyou.Fragments.SettingFragment$4
+ com.example.newsforyou.Fragments.SettingFragment$5
+ com.example.newsforyou.Fragments.SettingFragment$6
+ com.example.newsforyou.Fragments.SettingFragment$7
+ com.example.newsforyou.Fragments.SettingFragment$8
+ com.example.newsforyou.Fragments.SettingFragment$9
+com/example/newsforyou/Class/User.java
+ com.example.newsforyou.Class.User
+com/example/newsforyou/ProfileActivity.java
+ com.example.newsforyou.ProfileActivity
+ com.example.newsforyou.ProfileActivity$1
+ com.example.newsforyou.ProfileActivity$2
+ com.example.newsforyou.ProfileActivity$3
+ com.example.newsforyou.ProfileActivity$4
+ com.example.newsforyou.ProfileActivity$4$1
+ com.example.newsforyou.ProfileActivity$5
+ com.example.newsforyou.ProfileActivity$6
+ com.example.newsforyou.ProfileActivity$7
+ com.example.newsforyou.ProfileActivity$7$1
+ com.example.newsforyou.ProfileActivity$8
 com/example/newsforyou/Class/Category.java
  com.example.newsforyou.Class.Category
 com/example/newsforyou/Class/News.java
@@ -55,37 +75,17 @@ com/example/newsforyou/Fragments/SaveFragment.java
  com.example.newsforyou.Fragments.SaveFragment
 com/example/newsforyou/BuildConfig.java
  com.example.newsforyou.BuildConfig
-com/example/newsforyou/SignUpActivity.java
- com.example.newsforyou.SignUpActivity
- com.example.newsforyou.SignUpActivity$1
- com.example.newsforyou.SignUpActivity$2
- com.example.newsforyou.SignUpActivity$2$1
- com.example.newsforyou.SignUpActivity$2$1$1
-com/example/newsforyou/Class/MainViewPagerAdapter.java
- com.example.newsforyou.Class.MainViewPagerAdapter
-com/example/newsforyou/ProfileActivity.java
- com.example.newsforyou.ProfileActivity
- com.example.newsforyou.ProfileActivity$1
- com.example.newsforyou.ProfileActivity$2
- com.example.newsforyou.ProfileActivity$3
- com.example.newsforyou.ProfileActivity$4
- com.example.newsforyou.ProfileActivity$4$1
- com.example.newsforyou.ProfileActivity$5
- com.example.newsforyou.ProfileActivity$6
- com.example.newsforyou.ProfileActivity$7
- com.example.newsforyou.ProfileActivity$7$1
- com.example.newsforyou.ProfileActivity$8
-com/example/newsforyou/Fragments/SettingFragment.java
- com.example.newsforyou.Fragments.SettingFragment
- com.example.newsforyou.Fragments.SettingFragment$1
- com.example.newsforyou.Fragments.SettingFragment$2
- com.example.newsforyou.Fragments.SettingFragment$3
- com.example.newsforyou.Fragments.SettingFragment$4
- com.example.newsforyou.Fragments.SettingFragment$5
- com.example.newsforyou.Fragments.SettingFragment$6
- com.example.newsforyou.Fragments.SettingFragment$7
- com.example.newsforyou.Fragments.SettingFragment$8
- com.example.newsforyou.Fragments.SettingFragment$9
+com/example/newsforyou/Adapter/NewsAdapter.java
+ com.example.newsforyou.Adapter.NewsAdapter
+ com.example.newsforyou.Adapter.NewsAdapter$1
+com/example/newsforyou/Class/History.java
+ com.example.newsforyou.Class.History
+com/example/newsforyou/Class/CheckValid.java
+ com.example.newsforyou.Class.CheckValid
+com/example/newsforyou/SplashActivity.java
+ com.example.newsforyou.SplashActivity
+ com.example.newsforyou.SplashActivity$1
+ com.example.newsforyou.SplashActivity$2
 com/example/newsforyou/Fragments/HomeFragment.java
  com.example.newsforyou.Fragments.HomeFragment
  com.example.newsforyou.Fragments.HomeFragment$1

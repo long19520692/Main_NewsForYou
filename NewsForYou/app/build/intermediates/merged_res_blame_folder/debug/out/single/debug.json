@@ -16,12 +16,12 @@
         "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\drawable\\setting.png"
     },
     {
-        "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_custom_btn.xml.flat",
@@ -48,16 +48,16 @@
         "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_dashboard.xml.flat",
-        "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
+        "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_bug.xml.flat",
+        "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\drawable\\ic_bug.xml"
     },
     {
         "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_home.png.flat",
         "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\drawable\\home.png"
     },
     {
-        "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_bug.xml.flat",
-        "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\drawable\\ic_bug.xml"
+        "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_dashboard.xml.flat",
+        "source": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
     },
     {
         "merged": "D:\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
