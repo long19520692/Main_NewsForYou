@@ -139,7 +139,7 @@ public class DashboardActivity extends AppCompatActivity {
     private void initNews() {
         newsDatabase = FirebaseDatabase.getInstance().getReference();
         Faker faker = new Faker(new Locale("vi"));
-        for(int i = 0; i < 100; i++){
+        for(int i = 0; i < 30; i++){
             Date time = new Date();
             News news = new News(new Random().nextInt(),faker.book().title(), "Test", faker.book().author(), time.toString());
             newsDatabase.child("News").push().setValue(news);

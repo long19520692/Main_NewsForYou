@@ -64,6 +64,8 @@ public class HomeFragment extends Fragment {
 
     private FirebaseUser user;
 
+    FirebaseDatabase firebaseDatabase;
+
     private static final String TAG = HomeFragment.class.getName();
     private final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("News");
 

@@ -12,18 +12,14 @@ com/example/newsforyou/Class/Report.java
  com.example.newsforyou.Class.Report
 com/example/newsforyou/Class/MainViewPagerAdapter.java
  com.example.newsforyou.Class.MainViewPagerAdapter
-com/example/newsforyou/SignInActivity.java
- com.example.newsforyou.SignInActivity
- com.example.newsforyou.SignInActivity$1
- com.example.newsforyou.SignInActivity$2
- com.example.newsforyou.SignInActivity$3
- com.example.newsforyou.SignInActivity$4
-com/example/newsforyou/SignUpActivity.java
- com.example.newsforyou.SignUpActivity
- com.example.newsforyou.SignUpActivity$1
- com.example.newsforyou.SignUpActivity$2
- com.example.newsforyou.SignUpActivity$2$1
- com.example.newsforyou.SignUpActivity$2$1$1
+com/example/newsforyou/Class/History.java
+ com.example.newsforyou.Class.History
+com/example/newsforyou/Fragments/HomeFragment.java
+ com.example.newsforyou.Fragments.HomeFragment
+ com.example.newsforyou.Fragments.HomeFragment$1
+ com.example.newsforyou.Fragments.HomeFragment$2
+ com.example.newsforyou.Fragments.HomeFragment$3
+ com.example.newsforyou.Fragments.HomeFragment$4
 com/example/newsforyou/Class/Comment.java
  com.example.newsforyou.Class.Comment
 com/example/newsforyou/Class/ZoomOutPageTransformer.java
@@ -60,10 +56,8 @@ com/example/newsforyou/Class/Category.java
  com.example.newsforyou.Class.Category
 com/example/newsforyou/Class/News.java
  com.example.newsforyou.Class.News
-com/example/newsforyou/DashboardActivity.java
- com.example.newsforyou.DashboardActivity
- com.example.newsforyou.DashboardActivity$1
- com.example.newsforyou.DashboardActivity$2
+com/example/newsforyou/Class/CheckValid.java
+ com.example.newsforyou.Class.CheckValid
 com/example/newsforyou/Class/Save.java
  com.example.newsforyou.Class.Save
 com/example/newsforyou/ForgotPasswordActivity.java
@@ -78,17 +72,23 @@ com/example/newsforyou/BuildConfig.java
 com/example/newsforyou/Adapter/NewsAdapter.java
  com.example.newsforyou.Adapter.NewsAdapter
  com.example.newsforyou.Adapter.NewsAdapter$1
-com/example/newsforyou/Class/History.java
- com.example.newsforyou.Class.History
-com/example/newsforyou/Class/CheckValid.java
- com.example.newsforyou.Class.CheckValid
+com/example/newsforyou/SignUpActivity.java
+ com.example.newsforyou.SignUpActivity
+ com.example.newsforyou.SignUpActivity$1
+ com.example.newsforyou.SignUpActivity$2
+ com.example.newsforyou.SignUpActivity$2$1
+ com.example.newsforyou.SignUpActivity$2$1$1
 com/example/newsforyou/SplashActivity.java
  com.example.newsforyou.SplashActivity
  com.example.newsforyou.SplashActivity$1
  com.example.newsforyou.SplashActivity$2
-com/example/newsforyou/Fragments/HomeFragment.java
- com.example.newsforyou.Fragments.HomeFragment
- com.example.newsforyou.Fragments.HomeFragment$1
- com.example.newsforyou.Fragments.HomeFragment$2
- com.example.newsforyou.Fragments.HomeFragment$3
- com.example.newsforyou.Fragments.HomeFragment$4
+com/example/newsforyou/DashboardActivity.java
+ com.example.newsforyou.DashboardActivity
+ com.example.newsforyou.DashboardActivity$1
+ com.example.newsforyou.DashboardActivity$2
+com/example/newsforyou/SignInActivity.java
+ com.example.newsforyou.SignInActivity
+ com.example.newsforyou.SignInActivity$1
+ com.example.newsforyou.SignInActivity$2
+ com.example.newsforyou.SignInActivity$3
+ com.example.newsforyou.SignInActivity$4
